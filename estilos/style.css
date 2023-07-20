@@ -128,7 +128,6 @@ justify-content: center;
 
 #slider {
 margin: 0 auto;
-margin-top: 50px;
 overflow: hidden;
 height: 420px;
 width: 280px;
@@ -341,19 +340,35 @@ text-align: justify;
 }
 
 .start-see {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    height: 40px;
-    border: none;
-    background-color: #f47521;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+height: 40px;
+border: none;
+background-color: #f47521;
 }
 
 .fa-play {
-    color: black;
-    margin-right: 7px;
+color: black;
+margin-right: 7px;
 }
+
+#populares {
+padding: 15px;
+height: 400px;
+}
+
+
+#populares-item {
+display: flex;
+gap: 10px;
+overflow-x: auto;
+}
+
+
+
+#populares-item::-webkit-scrollbar{ width: 0%; }
 
 
 
