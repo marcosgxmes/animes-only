@@ -19,7 +19,7 @@ top: 0;
 width: 100%;
 height: 60px;
 justify-content: space-between;
-background-color: #333;
+background-color: rgb(35, 37, 43);
 }
 
 .menu {display: flex;}
@@ -47,10 +47,7 @@ transition: 0.1s;
 z-index: 2;
 }
 
-.nav-menu2 {
-    border-top: 1px solid gray;
-    
-}
+.nav-menu2 { border-top: 1px solid gray; }
 
 .nav-menu.active { left: 0; }
 
@@ -99,62 +96,59 @@ display: flex;
 width: 60px;
 justify-content: center;
 align-items: center;
+margin-left: 20px;
 
 }
 
 .logo p {
-font-size: 25px;
+font-size: 23px;
 color: red;
 }
 
 .logo p:hover { color: #fff; cursor: pointer;}
 
-.icones {
-    display: flex;
-}
+.icones { display: flex; }
 
 .icon {
-    width: 60px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+width: 60px;
+display: flex;
+text-align: center;
+align-items: center;
+justify-content: center;
 }
 
 .icon:hover { background-color: #202020;}
 
 .fa {color: #fff; font-size: 20px;}
 
-.fa-star { color: yellow;}
+.fa-star { color: rgb(250, 184, 24);}
 
 
 /* SESSÃO SLIDE*/
 
 #slider {
-    display: flex;
-    overflow-x: auto;
-    height: 490px;
-    background-color: #000;
-}
-
-#slider::-webkit-scrollbar {
-    width: 0%;
-}
-
-.slider-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 100%;
-    height: 100%;
-}
-
-.slider-item img {
-max-width: 100%;
-max-height: 100%;
-display: block;
 margin: 0 auto;
+margin-top: 50px;
+overflow: hidden;
+height: 420px;
+width: 280px;
 }
+
+.container {
+display: flex;
+transition: transform 0.2s ease-in-out;
+transform: translateX(0);
+width: 280px;
+}
+
+.container img {
+object-fit: cover;
+max-height: 420px;
+width: 280px;
+}
+
+
+/* BOTÃO CLASSIFICAÇÃO*/
 
 .classificacao {
 display: flex;
@@ -171,33 +165,32 @@ width: 320px;
 color: #fff;
 margin-right: 10px !important;}
 
+
+/* SESSÃO ASSISTA GRATÍS*/
+
 #watch-free {
 color: #fff;
 background-color: #000;
 padding-left: 15px;
 }
 
-#watch-free h2 {
-    margin-bottom: 10px;
-}
+#watch-free h2 { margin-bottom: 10px; }
 
 .blue-bar {
-   height: 4px;
-   background-image: linear-gradient(to right, lightblue, rgba(0, 0, 178, 0.318));
-    width: 95%;
-    margin: 10px 0;
+height: 4px;
+background-image: linear-gradient(to left,#213944,#2abdbb);
+width: 95%;
+margin: 10px 0;
 }
 
 
 #watch-item {
-    display: flex;
-    gap: 10px;
-    overflow-x: auto;
+display: flex;
+gap: 10px;
+overflow-x: auto;
 }
 
-#watch-item::-webkit-scrollbar {
-    width: 0%;
-}
+#watch-item::-webkit-scrollbar { width: 0%; }
 
 
 .animes-sugest {
@@ -210,42 +203,107 @@ color: #fff;
 }
 
 .animes-sugest img {
-    max-width: 100%;
-    max-height: 100%;
-    margin-bottom: 10px;
+max-width: 100%;
+max-height: 100%;
+margin-bottom: 10px;
 }
 
 .animes-sugest h3 {
-    text-align: start;
-    font-size: 0.9rem;
-    margin-bottom: 5px;
+text-align: start;
+font-size: 0.9rem;
+margin-bottom: 5px;
 }
 
 .animes-sugest > p {
-    max-width: 100%;
+font-size: 0.9rem;
+color: #a0a0a0;
+max-width: 100%;
 }
 
+
+/* SESSÃO LANÇAMENTOS*/
 
 #new-animes {
-    min-height: 400px;
-    margin-top: 40px;
-    padding-left: 15px;
-    border: 2px solid purple;
+min-height: 400px;
+margin-top: 40px;
+padding: 0 15px;
 }
 
+.fa-play-circle-o {
+font-weight: normal;
+font-size: 25px;
+margin-right: 7px;
+}
 
 
 .orange-bar {
-    height: 4px;
-    background-image: linear-gradient(to right, orange, rgba(212, 117, 0, 0.349));
-     width: 95%;
-     margin: 7px 0;
- }
+width: 100%;
+margin-top: 10px;
+margin-bottom: 15px;
+height: 4px;
+background-image: linear-gradient(to left,#fab818,#ef4323);
+}
 
- .animes-new {
-    border: 1px solid black;
-    min-height: 100px;
-    width: 100%;
+#hoje-item {
+padding-top: 15px;
+margin-top: 15px;
+border-top: 2px solid rgb(104, 104, 104);
+}
+
+.animes-new {
+display: flex;
+gap: 10px;
+align-items: center;
+justify-content: center;
+height: 105px;
+width: 100%;
+}
+
+.covers-img {
+width: 40%;
+height: 100%;
+}
+
+.covers-img img {
+width: 100%;
+}
+
+.covers-descript {
+width: 60%;
+position: relative;
+height: 100%;
+display: flex;
+flex-direction: column;
+gap: 5px;
+}
+
+.covers-descript h4 {
+font-size: 0.9rem;
+}
+
+.covers-descript .fa-star {
+font-size: 15px;
+margin-right: 5px;
+}
+
+.covers-descript p {
+font-size: .875rem;
+color: #a0a0a0;
+}
+
+.covers-descript .covers-time {
+    color: #2abdbb;
+    position: absolute;
+    bottom: 29%;
+    right: 0;
+}
+
+#ontem-item {
+display: flex;
+flex-direction: column;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 2px solid rgb(104, 104, 104);
 
 }
 
