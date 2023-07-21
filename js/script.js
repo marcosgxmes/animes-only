@@ -7,6 +7,7 @@ burgeBtn.addEventListener('click', () => {
 
 const imgs = document.getElementById('img');
 const img = document.querySelectorAll('#img img');
+const bg = document.getElementById('bcg');
 
 let idy = 0;
 
@@ -31,5 +32,4 @@ function carrosel() {
 setInterval(carrosel, 4100);
 
 
-const bg = document.getElementById('bcg');
 
