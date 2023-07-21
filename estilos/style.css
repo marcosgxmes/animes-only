@@ -104,7 +104,7 @@ transition: all 0.3s ease-in-out;
 
 .logo {
 display: flex;
-width: 60px;
+width: 70px;
 justify-content: center;
 align-items: center;
 margin-left: 15px;
@@ -112,7 +112,7 @@ padding-top: 4px;
 
 }
 
-.logo img { width: 26px; }
+.logo img { width: 40px; }
 
 .logo p:hover { color: #fff; cursor: pointer;}
 
