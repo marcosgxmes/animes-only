@@ -18,7 +18,7 @@ function carrosel() {
         idy = 0;
     }
     imgs.style.transform = `translateX(${-idy * 280}px)`;
-    
+
 
     
     if(bg.src == 'https://t4.ftcdn.net/jpg/04/06/48/21/360_F_406482145_y8lYwBqSNdi40Z7HotnzRPks1lJzNsHB.jpg') {
@@ -27,9 +27,15 @@ function carrosel() {
         bg.src = 'https://t4.ftcdn.net/jpg/04/06/48/21/360_F_406482145_y8lYwBqSNdi40Z7HotnzRPks1lJzNsHB.jpg'
     }
   
-}
+};
 
-setInterval(carrosel, 4100);
+setInterval(carrosel, 4100);  
 
+const seeMoreBtn = document.querySelector('.see-more');
+const hiddenOntem = document.getElementById('hidden-ontem');
 
+seeMoreBtn.addEventListener('click', () => {
+    hiddenOntem.classList.toggle('active');
+    seeMoreBtn.style.display = 'none'
+});
 
