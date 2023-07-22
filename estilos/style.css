@@ -7,6 +7,13 @@
     font-family: sans-serif;
 }
 
+@font-face {
+    font-family:'sad';
+    src: url('../fonts/sadistis/SADISTIS\ DEMO\ VERSION.otf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
 padding-top: 60px;
 background-color: #000;
@@ -34,9 +41,9 @@ width: 100%;
 }
 
 .nav-p {
-    color:#a0a0a0;
-    font-size: 0.8rem;
-    margin-bottom: 15px;
+color:#a0a0a0;
+font-size: 0.8rem;
+margin-bottom: 15px;
 }
 
 .nav-menu {
@@ -103,6 +110,8 @@ background-color:#fff;
 transition: all 0.3s ease-in-out;
 }
 
+#only { display: none; }
+
 .logo {
 display: flex;
 width: 60px;
@@ -126,6 +135,7 @@ display: flex;
 text-align: center;
 align-items: center;
 justify-content: center;
+cursor: pointer;
 }
 
 .icon:hover { background-color: #202020;}
@@ -148,6 +158,7 @@ width: 100%;
 height: 100%;
 }
 
+#slider2 { display: none;}
 
 #slider {
 position: absolute;
@@ -536,24 +547,57 @@ font-size: 0.9rem;
 }
 
 
-@media screen and (min-width:600px) and (max-width:768px) {    #carrosel {
+@media screen and (min-width:600px) and (max-width:768px) {   
+    .logo img { display: none;}
+
+    .menu{ margin-left: 10px;}
+
+    .logo {
+        margin-left: 30px;
+        align-items: center;
+        justify-content: center;
+        min-width: 100px;
+    }
+
+    #only {
+        display: block;
+        font-family: 'sad';
+        font-size: 30px;
+        color: #f47521;
+       
+    }
+    #carrosel {
     height: 650px;
     }
 
-    #slider {
-        border: 2px solid black;
-        height: 600px;
-        width: 400px;
+    #slider2 {
+    display: block;
+    height: 600px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    overflow: hidden;
+        z-index: 1;
+    }
+    
+    .container2 {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(0);
+    }
+    
+    .container2 img {
+    object-fit: cover;
+    height: 100%;
+    min-width: 400px;
     }
 
-    .container{
-        height: 100%;
-       
-    }
+    .container2{ height: 100%; }
 
-    .container img {
-       min-width: 400px;
-    }
+   
 
     .cartaz {
         max-width: 700px;
