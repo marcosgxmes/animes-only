@@ -19,7 +19,7 @@ function changeBc() {
     };
 }
 
-setInterval(changeBc, 4000)
+setInterval(changeBc, 4400)
 
 
 
@@ -38,7 +38,7 @@ let idy = 0;
         container.style.transform = `translateX(${-idy * 280}px)`;
 };
 
-setInterval(smallCarrosel, 4000)
+setInterval(smallCarrosel, 4400)
 
 
 
@@ -60,7 +60,7 @@ function bigCarrosel() {
     
 };
 
-setInterval(bigCarrosel, 4000); 
+setInterval(bigCarrosel, 4400); 
 
 
 //CARROSEL PARA ATÉ 1200px
@@ -80,7 +80,7 @@ function bigCarrosel2() {
     
 };
 
-setInterval(bigCarrosel2, 4000); 
+setInterval(bigCarrosel2, 4400); 
 
 
 

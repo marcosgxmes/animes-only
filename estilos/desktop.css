@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+.logo img { display: none;}
+
+.logo { width: 150px;}
+
+#only {
+display: block;
+font-family: 'sad';
+font-size: 30px;
+color: #f47521;
+
+}
+
+#carrosel{
+height: 650px;
+position: relative;
+}
+
+#slider { display: none; }
+
+#slider2 {
+display: block;
+height: 600px;
+width: 400px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+margin: 0 auto;
+overflow: hidden;
+    z-index: 1;
+}
+
+.container2 {
+display: flex;
+transition: transform 0.3s ease-in-out;
+transform: translateX(0);
+}
+
+.container2 img {
+object-fit: cover;
+height: 100%;
+min-width: 400px;
+}
+
+.container2{ height: 100%; }
+
+#watch-free {
+padding: 0 40px;
+}
+
+.cartaz {
+display: flex;
+min-width: 100%;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 0 40px;
+}
+
+#new-animes { padding: 0 40px;
+margin-top: 50px; }
+
+.propaganda { padding: 0 40px; }
+
+#populares { padding: 0 40px;
+margin-top: 50px; }
+
+#att-recents { padding: 0 40px;
+margin-top: 50px; }
+
+.snorlax { padding: 0 40px; }
+
+.see-all { width: 100%; }
+
+}

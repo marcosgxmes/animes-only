@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width:600px) and (max-width:768px) {   
+    
+.logo img { display: none;}
+
+.menu{ margin-left: 10px;}
+
+.logo {
+margin-left: 30px;
+align-items: center;
+justify-content: center;
+min-width: 100px;
+}
+
+#only {
+display: block;
+font-family: 'sad';
+font-size: 30px;
+color: #f47521;
+
+}
+#carrosel {
+height: 650px;
+}
+
+#slider2 {
+display: block;
+height: 600px;
+width: 400px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+margin: 0 auto;
+overflow: hidden;
+z-index: 1;
+}
+
+.container2 {
+display: flex;
+transition: transform 0.3s ease-in-out;
+transform: translateX(0);
+}
+
+.container2 img {
+object-fit: cover;
+height: 100%;
+min-width: 400px;
+}
+
+.container2{ height: 100%; }
+
+#watch-free {
+padding: 0 40px;
+}
+
+
+#new-animes {
+min-height: 400px;
+margin-top: 40px;
+padding: 0 40px;
+}
+    
+
+
+#hoje-item {
+padding-top: 15px;
+margin-top: 15px;
+border-top: 2px solid rgb(104, 104, 104);
+}
+
+#ontem-item {
+display: flex;
+flex-direction: column;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 2px solid rgb(104, 104, 104);
+}
+
+.animes-new {
+display: flex;
+gap: 25px;
+align-items: center;
+justify-content: space-between;
+height: 105px;
+width: 100%;
+margin-bottom: 25px;
+}
+
+.covers-img {
+height: 100%;
+}
+
+.covers-img img {
+height: 100%;
+}
+
+.covers-descript {
+width: 70%;
+position: relative;
+height: 100%;
+display: flex;
+flex-direction: column;
+gap: 7px;
+}
+
+.covers-descript h4 {
+font-size: 0.9rem;
+margin-bottom: 5px;
+}
+
+.covers-descript .fa-star {
+font-size: 15px;
+margin-right: 5px;
+}
+
+.covers-descript p {
+font-size: .875rem;
+color: #a0a0a0;
+}
+
+.covers-descript .covers-time {
+color: #2abdbb;
+position: absolute;
+bottom: 29%;
+right: 0;
+}
+
+   
+
+#populares {
+padding: 0 40px;
+}
+
+#att-recents { padding: 0 40px;}
+
+
+
+.cartaz {
+max-width: 700px;
+padding: 0 40px;
+}
+
+.cartaz img {
+width: 100%;
+}
+
+#new-animes {
+max-width: 700px;
+min-height: 700px;
+padding: 0 40px;
+}
+
+#ontem-item {
+display: flex;
+flex-direction: column;
+}
+
+.animes-new {
+max-width: 700px;
+height: 90px;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 20px;
+
+}
+
+.covers-img {
+width: 150px;
+}
+
+.covers-img img {
+height: 100%;
+}
+
+.covers-descript {
+justify-content: center;
+width: 70%;
+}
+
+
+
+.propaganda {
+max-width: 700px;
+padding: 0 40px;
+}
+
+.snorlax {
+padding: 0 40px;
+}
+
+.see-all { width: 100%;}
+}
