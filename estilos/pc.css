@@ -64,10 +64,98 @@ justify-content: center;
 padding: 0 40px;
 }
 
-#new-animes { padding: 0 40px;
-margin-top: 50px; }
+#new-animes {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding: 0 105px;
+    }
+    
+    #hoje-item {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 0px;
+        gap: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-top: 2px solid rgb(104, 104, 104);
+        }
+        
+        .animes-new {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        width: 300px;
+        min-width: 200px;
+        max-width: 300px;
+        margin-bottom: 0px;
+        margin-top: 20px;
+        }
+        
+        .covers-img {
+        height: 100%;
+        }
+        
+        .covers-img img {
+        height: 100%;
+        }
+        
+        .covers-descript {
+        max-width: 60%;
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        }
+        
+        .covers-descript h4 {
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+        }
+        
+        .covers-descript .fa-star {
+        font-size: 15px;
+        margin-right: 5px;
+        }
+        
+        .covers-descript p {
+        font-size: .875rem;
+        color: #a0a0a0;
+        }
+        
+        .covers-descript .covers-time {
+            color: #2abdbb;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        
+        #ontem-item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        column-gap: 10px;
+        justify-content: space-between;
+        margin-top: 15px;
+        padding-top: 0px;
+        border-top: 2px solid rgb(104, 104, 104);
+        }
+        
+        #hidden-ontem.active { 
+            display: flex !important;
+            flex-wrap: wrap;
+            row-gap: 10px;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+    }
 
-.propaganda { padding: 0 40px; }
+.propaganda { padding: 0 40px; width: 800px; margin: 0 auto; }
+
+.cartaz { max-width: 900px !important; margin:  0 auto;}
 
 #populares { padding: 0 40px;
 margin-top: 50px; }
@@ -77,6 +165,74 @@ margin-top: 50px; }
 
 .snorlax { padding: 0 40px; }
 
-.see-all { width: 100%; }
+.see-all { width: 120px; }
+
+
+footer{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 330px;
+    flex-direction: row;
+    padding: 0 105px;
+    background-image: linear-gradient(to bottom, black, #213944);
+    }
+    
+    footer > div > h2 {
+    font-size: 1rem;
+    width: 150px;
+    }
+    
+    footer > div > div > p {
+    font-size: 0.9rem;
+    line-height: 30px;
+    color: #a0a0a0;
+    }
+    
+    #navegacao {
+    display: flex;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    }
+    
+    #contact {
+    display: flex;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    
+    border-top: none;
+    }
+    
+    #contact i {
+    margin-right: 10px;
+    }
+    
+    #animes-only {
+    display: flex;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    
+    border-top: none;
+    }
+
+    #copright {
+        width: 900px;
+        position: absolute;
+        bottom: 0;
+        border-top: 1px solid #a0a0a055;
+        padding: 30px 0;
+        color: #a0a0a0;
+        
+        text-align: center;
+        }
+        
+        #copright p {
+        font-size: 0.9rem;
+        }
+
 }
 

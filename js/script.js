@@ -83,6 +83,26 @@ function bigCarrosel2() {
 setInterval(bigCarrosel2, 4400); 
 
 
+//CARROSEL ACIMA DE 1200px
+const container4 = document.getElementById('img4');
+const imgs4 = document.querySelectorAll('#img4 img');
+let idr = 0;
+
+function bigCarrosel4() {
+   
+    idr++;
+
+    if(idr > imgs3.length -1) {
+        idr = 0;
+    }
+    
+    container4.style.transform = `translateX(${-idr * 960}px)`;  
+    
+};
+
+setInterval(bigCarrosel4, 4400);
+
+
 
 //BOTAO VER MAIS
 const seeMoreBtn = document.querySelector('.see-more');
